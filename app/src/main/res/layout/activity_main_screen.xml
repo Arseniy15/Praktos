@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <TextView
+        android:id="@+id/txtLastEx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lastex"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCut"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <TextView
+        android:id="@+id/txtRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="clickRecipes"
+        android:text="@string/recipes"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCut"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <TextView
+        android:id="@+id/txtSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signOut"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCut"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <ImageView
+        android:id="@+id/mainScreenFon"
+        android:layout_width="468dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mainscreenfon" />
+
+    <ImageView
+        android:id="@+id/imgSF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sptext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/sptext" />
+
+    <ImageView
+        android:id="@+id/imgCut"
+        android:layout_width="411dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSF"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cut" />
+
+    <TextView
+        android:id="@+id/txtMyBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MyBody"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCut"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMyBody3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MyBody"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCut"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgLastExBottom"
+        android:layout_width="410dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyBody"
+        app:layout_constraintVertical_bias="0.782"
+        app:srcCompat="@drawable/bodyfon" />
+
+    <ImageView
+        android:id="@+id/imgLastExTop"
+        android:layout_width="410dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyBody"
+        app:layout_constraintVertical_bias="0.413"
+        app:srcCompat="@drawable/bodyfon" />
+
+    <ImageView
+        android:id="@+id/imgMyBody"
+        android:layout_width="410dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyBody"
+        app:srcCompat="@drawable/bodyfon" />
+
+    <ImageView
+        android:id="@+id/bvRecipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="clickRecipes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toEndOf="@+id/txtRecipes"
+        app:layout_constraintTop_toBottomOf="@+id/imgLastExBottom"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/blackvector" />
+
+    <ImageView
+        android:id="@+id/bvOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtSignOut"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecipes"
+        app:layout_constraintVertical_bias="0.555"
+        app:srcCompat="@drawable/blackvector" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="164dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgLastExTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="@+id/imgMyBody"
+        app:layout_constraintTop_toTopOf="@+id/imgMyBody"
+        app:layout_constraintVertical_bias="0.488"
+        app:srcCompat="@drawable/imgbody" />
+
+    <TextView
+        android:id="@+id/txtDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/details"
+        android:textColor="@color/details"
+        app:layout_constraintBottom_toTopOf="@+id/imgLastExTop"
+        app:layout_constraintEnd_toEndOf="@+id/imgMyBody"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toEndOf="@+id/imageView21" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMyBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="@+id/imgMyBody"
+        app:srcCompat="@drawable/ves" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMyBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="@+id/imgMyBody"
+        app:srcCompat="@drawable/rost" />
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="91dp"
+        android:text="76 kg"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMyBody"
+        app:layout_constraintEnd_toEndOf="@+id/imgMyBody"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imgMyBody"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtRost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="68dp"
+        android:text="178 cm"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMyBody"
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toTopOf="@+id/imgMyBody"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMyBody"
+        app:layout_constraintEnd_toEndOf="@+id/imgMyBody"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtDetails"
+        app:srcCompat="@drawable/grayvector" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="164dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgLastExBottom"
+        app:layout_constraintEnd_toEndOf="@+id/imgLastExTop"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgLastExTop"
+        app:layout_constraintVertical_bias="0.689"
+        app:srcCompat="@drawable/extop" />
+
+    <TextView
+        android:id="@+id/txtExTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="99dp"
+        android:text="Push-Ups"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLastExTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgLastExTop"
+        app:layout_constraintTop_toTopOf="@+id/imgLastExTop"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="124dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="33dp"
+        android:text="Push-ups exercise the pectoral muscles, triceps, and anterior deltoids"
+        android:textAlignment="viewStart"
+        android:textColor="@color/details"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLastExTop"
+        app:layout_constraintEnd_toEndOf="@+id/imgLastExTop"
+        app:layout_constraintStart_toStartOf="@+id/imageView27"
+        app:layout_constraintTop_toTopOf="@+id/imgLastExTop" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="164dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLastExBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgLastExBottom"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/exbot" />
+
+    <TextView
+        android:id="@+id/txtExBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="159dp"
+        android:text="Plank"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLastExBottom"
+        app:layout_constraintEnd_toEndOf="@+id/imgLastExBottom"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView30"
+        app:layout_constraintTop_toTopOf="@+id/imgLastExBottom"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="92dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="88dp"
+        android:text="The plank strengthens the abdominalsm, back and shoulders"
+        android:textAlignment="viewStart"
+        android:textColor="@color/details"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLastExBottom"
+        app:layout_constraintEnd_toEndOf="@+id/imgLastExBottom"
+        app:layout_constraintStart_toEndOf="@+id/imageView30"
+        app:layout_constraintTop_toBottomOf="@+id/imgLastExTop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

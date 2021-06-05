@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Praktos</string>
+    <string name="txtSuperFit">SuperFit</string>
+    <string name="txtUserName">UserName</string>
+    <string name="txtSign">Sign In</string>
+    <string name="num9">9</string>
+    <string name="num8">8</string>
+    <string name="num7">7</string>
+    <string name="num6">6</string>
+    <string name="num5">5</string>
+    <string name="num4">4</string>
+    <string name="num3">3</string>
+    <string name="num2">2</string>
+    <string name="num1">1</string>
+    <string name="email">Email</string>
+    <string name="code">Code</string>
+    <string name="repeat">RepeatCode</string>
+    <string name="signUp">Sign Up</string>
+    <string name="MyBody">My Body</string>
+    <string name="lastex">Last exercises</string>
+    <string name="recipes">Recipes</string>
+    <string name="signout" />
+    <string name="signOut">Sign Out</string>
+    <string name="details">Details</string>
+    <string name="search">Search...</string>
+    <string name="balanced">Balanced</string>
+    <string name="highbar">High-Fiber</string>
+    <string name="higjprotein">High-Protein</string>
+</resources>
